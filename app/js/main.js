@@ -1,3 +1,19 @@
 $(function(){
+
+  $(".rate-star").rateYo({
+    rating: 5,
+    starWidth: "10px",
+    readOnly: true
+  });
+
+  $(".product-slider__inner").slick({
+      dots: true,
+      arrows: false,
+      slidesToShow: 4,
+      slidesToScroll: 4
+  });
+
     var mixer = mixitup('.product__inner-box');
+
+
 });
