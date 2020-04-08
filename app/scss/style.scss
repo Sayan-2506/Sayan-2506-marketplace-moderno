@@ -62,13 +62,13 @@
     &-title {
         font-size: 48px;
         margin-bottom: 10px;
-        font-weight: 700;
+        @include f700;
         line-height: 72px;
     }
     &-text {
         font-size: 20px;
         margin-bottom: 50px;
-        font-weight: 500;
+        @include f500;
         line-height: 30px;
     }
     &-form {
@@ -82,12 +82,12 @@
             height: 56px;
             border-radius: 4px;
             border: none;
-            font-weight: 500;
+            @include f500;
             padding-left: 25px;
             padding-right: 60px;
             &::placeholder {
                 color: #90a4ae;
-                font-weight: 500;
+                @include f500;
             }
         }
         button {
@@ -146,7 +146,7 @@
         align-items: center;
         padding: 5px 15px;
         min-height: 50px;
-        font-weight: 500;
+        @include f500;
         border-bottom: 1px solid #e7ecf2;
     }
     &-name {
@@ -164,7 +164,7 @@
     }
     &-price {
         color: $bg;
-        font-weight: 700;
+        @include f700;
         font-size: 18px;
     }
     &-info {
@@ -190,7 +190,7 @@
         }
         span {
             font-size: 12px;
-            font-weight: 500;
+            @include f500;
         }
     }
     &-star {
@@ -244,5 +244,57 @@
     }
 }
 
-  
+.advantages {
+    background-color: $bg;
+    min-height: 520px;
+    padding: 70px 0px;
+}
+.advantages__title {
+    color: #fff;
+    margin-bottom: 90px;
+}
+
+.advantages__inner {
+    display: flex;
+    justify-content: space-between;
+}
+.advantages__item {
+    max-width: 330px;
+    width: 100%;
+    text-align: center;
+    padding: 0px 10px;
+    transition: all .5s;
+    &:hover {
+        .advantages__item-images {
+            background-color: $green;
+        }
+        .advantages__item-title {
+            color: $green;
+        }
+    }
+    &-title {
+        font-size: 18px;
+        line-height: 40px;
+        color: #fff;
+        margin-bottom: 20px;
+        transition: all .5s;
+    }
+    &-text {
+        font-size: 12px;
+        line-height: 20px;
+        color: #b0bec5;
+        @include f500;
+    }
+    &-images {
+        width: 110px;
+        height: 110px;
+        background-color: #fff;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 25px;
+        transition: all .5s;
+    }
+}
   
