@@ -297,4 +297,44 @@
         transition: all .5s;
     }
 }
+
+//start author
+
+.author {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 540px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &__box{
+        max-width: 440px;
+        min-height: 150px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: $green;
+    }
+    &__title{
+        font-size: 20px;
+        line-height: 20px;
+        color: #fff;
+        margin-right: 15px;
+        max-width: 200px;
+        span{
+            @include f700;
+        }
+    }
+    &__link{
+        font-size: 14px;
+        line-height: 26px;
+        padding: 10px 15px;
+        background-color: #fff;
+    }
+}
+
+//end author
+
   
