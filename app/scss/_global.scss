@@ -23,6 +23,7 @@ body {
     font-size: 12px;
     line-height: 24px;
     color: $text;
+    overflow-x: hidden;
 }
 .content {
 	min-height: calc(100vh - 80px);
@@ -85,5 +86,17 @@ body {
         a {
             color: #b0bec5;
         }
+    }
+}
+.angle-right {
+    position: relative;
+    padding-left: 15px;
+    &::before {
+        content: "\f105";
+        font-family: 'icomoon';
+        position: absolute;
+        left: 0;
+        color: $green;
+        font-size: 14px;
     }
 }
